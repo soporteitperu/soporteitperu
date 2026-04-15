@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="google-site-verification" content="gmPDiawr1ui6AJA5o6kTpf2hEreUjrE5_3bBv77ayO8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soporte técnico en Lima Norte a domicilio | Reparación de laptops urgente</title>
+  <meta name="description" content="¿Tu laptop está lenta o con virus? Soporte técnico en Lima Norte a domicilio. Atención el mismo día en Los Olivos, SMP, Comas e Independencia." />
+  <meta property="og:title" content="Soporte técnico en Lima Norte | Reparación de laptops a domicilio" />
+  <meta property="og:description" content="¿Tu laptop lenta o con virus? La reparamos hoy en tu casa. Precio fijo, sin sorpresas. Lima Norte." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=1200&q=80" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://soporteitperu.com/" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://soporteitperu.com/" />
+  <meta name="geo.region" content="PE-LIM" />
+  <meta name="geo.placename" content="Lima Norte" />
+  <meta name="theme-color" content="#0f172a" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Soporte IT Peru",
+    "image": "https://soporteitperu.com/logo.jpg",
+    "telephone": "+51993976840",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lima Norte",
+      "addressRegion": "Lima",
+      "addressCountry": "PE"
+    },
+    "areaServed": [
+      "Los Olivos",
+      "San Martín de Porres",
+      "Independencia",
+      "Comas"
+    ],
+    "url": "https://soporteitperu.com"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --orange: #f97316;
+      --green: #25d366;
+      --dark: #0f172a;
+      --darker: #020617;
+      --border: #1e293b;
+      --gold: #FFD700;
+      --bg1: #e8f4fd;
+      --bg2: #dbeafe;
+      --card-border: #bfdbfe;
+      --text-muted: #cbd5e1;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #1e293b;
+      background: #fff;
+      overflow-x: hidden;
+    }
+
+    /* ── HEADER ── */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: var(--dark);
+      border-bottom: 1px solid var(--border);
+      padding: 0 1.25rem;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 1.2rem;
+      white-space: nowrap;
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+    .logo span { color: var(--orange); }
+
+    .btn-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--green);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.88rem;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      box-shadow: 0 2px 12px rgba(37,211,102,0.35);
+      transition: transform .2s, box-shadow .2s;
+      white-space: nowrap;
+    }
+    .btn-wa:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(37,211,102,0.5); }
+    .btn-wa svg { flex-shrink: 0; }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      background-image:
+        linear-gradient(135deg, rgba(5,10,30,0.85) 0%, rgba(15,40,120,0.75) 100%),
+        url('https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      padding: 100px 1.25rem 60px;
+    }
+
+    .hero-inner {
+      max-width: 780px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 50px;
+    }
+    .badge-orange { background: var(--orange); color: #fff; }
+    .badge-dark { background: var(--dark); color: var(--gold); }
+
+    .hero-title {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.15;
+      margin: 1.25rem 0 1rem;
+      letter-spacing: -0.02em;
+    }
+    .hero-title em { color: var(--orange); font-style: normal; }
+
+    .hero-sub {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      line-height: 1.65;
+    }
+
+    @keyframes pulse-btn {
+      0%   { box-shadow: 0 0 0 0 rgba(37,211,102,0.5); }
+      70%  { box-shadow: 0 0 0 14px rgba(37,211,102,0); }
+      100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+    }
+
+    .btn-hero {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--green);
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.05rem;
+      text-decoration: none;
+      padding: 16px 36px;
+      border-radius: 50px;
+      animation: pulse-btn 2s infinite;
+      transition: transform .2s;
+    }
+    .btn-hero:hover { transform: translateY(-2px); }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 2rem;
+    }
+    .hero-badge-item {
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 50px;
+      border: 1px solid rgba(255,255,255,0.18);
+      backdrop-filter: blur(4px);
+    }
+
+    /* ── SECTIONS COMMON ── */
+    section { padding: 80px 0; border-top: 1px solid var(--card-border); }
+    .section-inner { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
+    .section-head { text-align: center; margin-bottom: 3rem; }
+    .section-title {
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 800;
+      color: var(--dark);
+      margin-top: .75rem;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    /* ── CARDS GRID ── */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(15,23,42,0.06);
+      transition: box-shadow .25s, border-color .25s, transform .25s;
+    }
+    .card:hover {
+      box-shadow: 0 8px 32px rgba(37,211,102,0.15);
+      border-color: var(--green);
+      transform: translateY(-4px);
+    }
+
+    .card-img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-body { padding: 1.25rem; }
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: .5rem;
+    }
+    .card-text {
+      font-size: 0.88rem;
+      color: #475569;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .btn-green {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--green);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.88rem;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      box-shadow: 0 2px 8px rgba(37,211,102,0.3);
+      transition: transform .2s, box-shadow .2s;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-green:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(37,211,102,0.45); }
+
+    .btn-green-full {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      background: var(--green);
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.05rem;
+      text-decoration: none;
+      padding: 16px;
+      border-radius: 50px;
+      box-shadow: 0 2px 12px rgba(37,211,102,0.35);
+      transition: transform .2s, box-shadow .2s;
+      margin-top: 2rem;
+    }
+    .btn-green-full:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(37,211,102,0.5); }
+
+    /* ── SECTION PROBLEMAS ── */
+    #problemas { background: var(--bg1); }
+
+    /* ── SECTION SERVICIOS ── */
+    #servicios { background: var(--bg2); }
+
+    .servicios-layout {
+      display: grid;
+      grid-template-columns: 40% 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    .servicios-img-wrap { position: relative; border-radius: 12px; overflow: hidden; }
+    .servicios-img-wrap img {
+      width: 100%;
+      height: 100%;
+      min-height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+    .servicios-img-caption {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: rgba(15,23,42,0.82);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 10px 14px;
+      text-align: center;
+    }
+
+    .table-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid var(--card-border); box-shadow: 0 2px 12px rgba(15,23,42,0.07); }
+
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+
+    thead th {
+      background: var(--dark);
+      color: var(--gold);
+      font-weight: 700;
+      padding: 14px 16px;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    tbody tr:nth-child(odd)  td { background: #fff; }
+    tbody tr:nth-child(even) td { background: #f0f7ff; }
+    tbody td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #e2edf8;
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    tbody tr:last-child td { border-bottom: none; }
+
+    .td-service { font-weight: 700; color: var(--dark); }
+    .td-price   { font-weight: 800; color: var(--dark); white-space: nowrap; }
+
+    .badge-bono {
+      display: inline-block;
+      background: var(--orange);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 50px;
+      margin-top: 4px;
+      white-space: nowrap;
+    }
+    .badge-popular {
+      display: inline-block;
+      background: #fef3c7;
+      color: #92400e;
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 50px;
+      margin-top: 4px;
+    }
+    .badge-top {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 50px;
+      margin-top: 4px;
+    }
+
+    /* ── SECTION VENTAJAS ── */
+    #ventajas { background: var(--bg1); }
+
+    .card-icon {
+      font-size: 2rem;
+      margin-bottom: .5rem;
+    }
+    .card-title-orange { color: var(--orange); }
+
+    /* ── SECTION TESTIMONIOS ── */
+    #testimonios { background: var(--bg2); }
+
+    .counter-block {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .counter-num {
+      font-size: 4rem;
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .counter-label {
+      font-size: 1rem;
+      color: #475569;
+      margin-top: .25rem;
+    }
+
+    .testimonios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .testi-card {
+      background: #fff;
+      border: 1px solid var(--card-border);
+      border-left: 3px solid var(--gold);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 12px rgba(15,23,42,0.06);
+      transition: box-shadow .25s, transform .25s;
+    }
+    .testi-card:hover {
+      box-shadow: 0 8px 28px rgba(15,23,42,0.12);
+      transform: translateY(-4px);
+    }
+
+    .stars { color: #f59e0b; font-size: 1rem; margin-bottom: .75rem; letter-spacing: 2px; }
+    .testi-text {
+      font-size: 0.92rem;
+      color: #334155;
+      line-height: 1.7;
+      font-style: italic;
+      margin-bottom: 1.25rem;
+    }
+
+    .testi-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--orange), var(--gold));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.9rem;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .author-name { font-weight: 700; font-size: 0.88rem; color: var(--dark); }
+    .author-zone { font-size: 0.78rem; color: #64748b; }
+
+    /* ── CTA FINAL ── */
+    #cta {
+      background: var(--dark);
+      border-top: 3px solid var(--gold);
+      padding: 100px 0;
+      text-align: center;
+    }
+    .cta-title {
+      font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+      font-weight: 800;
+      color: #fff;
+      margin: 1rem 0 .75rem;
+    }
+    .cta-sub {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+    .cta-note {
+      margin-top: 1.25rem;
+      font-size: 0.85rem;
+      color: #64748b;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--darker);
+      padding: 60px 0 30px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .footer-col h4 {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 1rem;
+    }
+    .footer-col p, .footer-col li {
+      font-size: 0.88rem;
+      color: #94a3b8;
+      line-height: 1.8;
+      list-style: none;
+    }
+    .footer-col ul { padding: 0; }
+    .footer-desc {
+      font-size: 0.88rem;
+      color: #64748b;
+      line-height: 1.7;
+      margin-top: .75rem;
+    }
+    .footer-copy {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #475569;
+    }
+
+    /* ── FLOATING WA BTN ── */
+    @keyframes wa-pulse {
+      0%   { box-shadow: 0 0 0 0 rgba(37,211,102,0.4); }
+      70%  { box-shadow: 0 0 0 15px rgba(37,211,102,0); }
+      100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+    }
+
+    .wa-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: var(--green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      animation: wa-pulse 2s infinite;
+      text-decoration: none;
+      transition: transform .2s;
+    }
+    .wa-float:hover { transform: scale(1.1); }
+
+    /* ── FADE-IN ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .6s ease, transform .6s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── HERO EXTRAS ── */
+    .hero-emotional {
+      font-size: clamp(1.4rem,4vw,2.2rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: .75rem;
+      max-width: 100%;
+    }
+    .hero-emotional em { color: var(--orange); font-style: normal; }
+    .hero-confirm {
+      color: #4ade80;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 0 0 1rem;
+    }
+    .hero-urgency {
+      color: #94a3b8;
+      font-size: 0.85rem;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    /* ── HEADER PHONE ── */
+    .header-phone {
+      color: #cbd5e1;
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+
+    /* ── CTA EXTRA NOTE ── */
+    .cta-extra {
+      margin-top: .75rem;
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+
+    /* ══ RESPONSIVE ══ */
+
+    /* ── Tablet (≤ 1024px) ── */
+    @media (max-width: 1024px) {
+      .cards-grid        { grid-template-columns: repeat(2, 1fr); }
+      .testimonios-grid  { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ── Mobile (≤ 768px) ── */
+    @media (max-width: 768px) {
+
+      /* Header: logo + botón en una sola línea, sin desbordarse */
+      header { padding: 0 1rem; gap: 8px; }
+      .logo  { font-size: 1rem; }
+      .header-phone { display: none; }
+      .btn-wa { padding: 9px 14px; font-size: 0.82rem; gap: 6px; }
+
+      /* Padding secciones reducido */
+      section { padding: 48px 0; }
+      .section-head { margin-bottom: 2rem; }
+      #cta { padding: 60px 0; }
+      footer { padding: 48px 0 24px; }
+
+      /* Hero */
+      #hero { padding: 88px 1.1rem 48px; }
+      .hero-title  { font-size: clamp(1.55rem, 6.5vw, 2.2rem); margin: 1rem 0 .75rem; }
+      .hero-confirm { font-size: 1rem; }
+      .hero-sub    { font-size: 0.95rem; margin-bottom: 1.5rem; }
+      .hero-urgency { font-size: 0.8rem; }
+      .hero-badge-item { font-size: 0.78rem; padding: 7px 12px; }
+
+      /* Botón hero: ancho completo */
+      .btn-hero {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 15px 20px;
+        font-size: 0.95rem;
+        min-height: 52px;
+      }
+
+      /* Cards grids: 1 columna */
+      .cards-grid       { grid-template-columns: 1fr; }
+      .testimonios-grid { grid-template-columns: 1fr; }
+
+      /* Botones de cards: ancho completo, mínimo 48px táctil */
+      .card-body .btn-green {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        min-height: 48px;
+        font-size: 0.92rem;
+      }
+      .btn-green { min-height: 48px; }
+      .card-text { font-size: 0.88rem; min-font-size: 14px; }
+
+      /* Imágenes: nunca desbordan */
+      img, .card-img { max-width: 100%; }
+
+      /* Servicios: 1 columna, imagen más compacta */
+      .servicios-layout { grid-template-columns: 1fr; gap: 1.5rem; }
+      .servicios-img-wrap img { min-height: 180px; max-height: 220px; }
+
+      /* ── Tabla → cards individuales por fila ── */
+      .table-wrap {
+        border: none;
+        box-shadow: none;
+        background: transparent;
+        overflow: visible;
+        border-radius: 0;
+      }
+      .table-wrap table,
+      .table-wrap thead,
+      .table-wrap tbody,
+      .table-wrap th,
+      .table-wrap td,
+      .table-wrap tr { display: block; }
+
+      /* Esconder encabezado de tabla */
+      .table-wrap thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      /* Cada fila → card */
+      .table-wrap tbody tr {
+        background: #fff;
+        border: 1px solid var(--card-border);
+        border-radius: 12px;
+        margin-bottom: 1rem;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(15,23,42,0.07);
+      }
+
+      /* Celdas: apiladas */
+      .table-wrap tbody td {
+        border-bottom: 1px solid #e2edf8 !important;
+        padding: 10px 14px;
+        background: transparent !important;
+        font-size: 0.87rem;
+        line-height: 1.5;
+      }
+      .table-wrap tbody tr:last-child td:last-child { border-bottom: none !important; }
+
+      /* Etiqueta de columna encima de cada celda */
+      .table-wrap td::before {
+        content: attr(data-label);
+        display: block;
+        font-size: 0.69rem;
+        font-weight: 700;
+        color: #64748b;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        margin-bottom: 4px;
+      }
+
+      /* Precio: grande y naranja */
+      .table-wrap .td-price {
+        font-size: 1.4rem !important;
+        font-weight: 900 !important;
+        color: var(--orange) !important;
+      }
+
+      /* Bono badge: permitir wrap en móvil */
+      .badge-bono { white-space: normal; font-size: 0.7rem; }
+
+      /* btn-green-full */
+      .btn-green-full { font-size: 0.95rem; padding: 15px; min-height: 52px; }
+
+      /* CTA */
+      .cta-title { font-size: clamp(1.3rem, 6vw, 1.8rem); }
+      .cta-sub   { font-size: 0.92rem; }
+
+      /* Footer: 1 columna */
+      .footer-grid { grid-template-columns: 1fr; gap: 1.75rem; }
+      .footer-col p, .footer-col li { font-size: 0.88rem; }
+      .footer-copy { font-size: 0.78rem; }
+    }
+
+    /* ── Móvil pequeño (≤ 400px — iPhone SE 375px) ── */
+    @media (max-width: 400px) {
+      header { padding: 0 .85rem; }
+      .logo  { font-size: 0.88rem; }
+      .btn-wa { padding: 8px 11px; gap: 5px; }
+      .hero-title { font-size: 1.42rem; }
+      .hero-badge-item { font-size: 0.73rem; padding: 6px 10px; }
+      .hero-badges { gap: 5px; }
+      .section-title { font-size: 1.4rem; }
+    }
+
+    /* ── Ocultar texto del botón WA en pantallas estrechas ── */
+    @media (max-width: 600px) {
+      .btn-wa-text { display: none; }
+      .hero-badges { gap: 6px; }
+      .counter-num { font-size: 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="#hero" class="logo">SOPORTE <span>IT</span> PERU</a>
+    <span class="header-phone">📞 993 976 840</span>
+    <a href="https://wa.me/51993976840?text=Hola,%20necesito%20soporte%20técnico%20para%20mi%20laptop" class="btn-wa" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.858L.054 23.486a.5.5 0 0 0 .612.612l5.628-1.48A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 0 1-5.032-1.384l-.36-.214-3.733.981.999-3.648-.235-.374A9.806 9.806 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+      <span class="btn-wa-text">WhatsApp</span>
+    </a>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-inner fade-in">
+        <span class="badge badge-orange">⚡ LIMA NORTE · SERVICIO A DOMICILIO</span>
+        <h1 class="hero-title">Soporte técnico de computadoras en Lima Norte</h1>
+        <p class="hero-emotional">¿Tu laptop se congela justo<br><em>cuando más la necesitas?</em></p>
+        <p class="hero-confirm">✅ La reparamos hoy mismo en tu domicilio.</p>
+        <p class="hero-sub">
+          Como técnico de computadoras a domicilio, diagnosticamos y reparamos tu laptop hoy mismo en tu casa. Sin moverte. Sin sorpresas en el precio.
+        </p>
+        <a href="https://wa.me/51993976840?text=Hola,%20necesito%20soporte%20técnico%20para%20mi%20laptop" class="btn-hero" target="_blank" rel="noopener">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.858L.054 23.486a.5.5 0 0 0 .612.612l5.628-1.48A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 0 1-5.032-1.384l-.36-.214-3.733.981.999-3.648-.235-.374A9.806 9.806 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+          Hablar por WhatsApp ahora
+        </a>
+        <div class="hero-badges">
+          <span class="hero-badge-item">✓ A domicilio</span>
+          <span class="hero-badge-item">✓ Mismo día</span>
+          <span class="hero-badge-item">✓ Precio fijo</span>
+          <span class="hero-badge-item">✓ Sin cobros ocultos</span>
+        </div>
+        <p class="hero-urgency">🕐 Respuesta en menos de 10 minutos · Lunes a sábado</p>
+      </div>
+    </section>
+
+    <!-- PROBLEMAS -->
+    <section id="problemas">
+      <div class="section-inner">
+        <div class="section-head fade-in">
+          <span class="badge badge-dark">DIAGNÓSTICO</span>
+          <h2 class="section-title">¿Qué problema tiene tu equipo?</h2>
+        </div>
+        <div class="cards-grid">
+
+          <article class="card fade-in">
+            <img class="card-img" src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=400&q=75" alt="Laptop lenta con problemas de rendimiento en Lima Norte" loading="lazy" />
+            <div class="card-body">
+              <h3 class="card-title">💻 Laptop muy lenta</h3>
+              <p class="card-text">Se demora minutos en encender, los programas tardan en abrir, el sistema se congela. Lo resolvemos con optimización completa.</p>
+              <a href="https://wa.me/51993976840?text=Hola,%20mi%20laptop%20está%20muy%20lenta%20y%20necesito%20que%20la%20revisen" class="btn-green" target="_blank" rel="noopener">Contáctame por WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="card fade-in">
+            <img class="card-img" src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=400&q=75" alt="Eliminación de virus y malware en laptop Lima Norte" loading="lazy" />
+            <div class="card-body">
+              <h3 class="card-title">🛡️ Virus o malware</h3>
+              <p class="card-text">Publicidad que aparece sola, archivos que desaparecen, contraseñas comprometidas. Eliminamos todo el malware y protegemos tu equipo.</p>
+              <a href="https://wa.me/51993976840?text=Hola,%20creo%20que%20mi%20laptop%20tiene%20virus%20y%20necesito%20ayuda" class="btn-green" target="_blank" rel="noopener">Contáctame por WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="card fade-in">
+            <img class="card-img" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&q=75" alt="Reparación de laptop con pantalla negra o azul en Lima Norte" loading="lazy" />
+            <div class="card-body">
+              <h3 class="card-title">🖥️ Pantalla negra o azul</h3>
+              <p class="card-text">La laptop no enciende, aparece una pantalla azul de error o se reinicia sola constantemente. Diagnosticamos y reparamos el sistema.</p>
+              <a href="https://wa.me/51993976840?text=Hola,%20mi%20laptop%20muestra%20pantalla%20negra%20o%20azul%20y%20no%20funciona" class="btn-green" target="_blank" rel="noopener">Contáctame por WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="card fade-in">
+            <img class="card-img" src="https://images.unsplash.com/photo-1504707748692-419802cf939d?w=400&q=75" alt="Problemas de software en computadora atendidos a domicilio Lima Norte" loading="lazy" />
+            <div class="card-body">
+              <h3 class="card-title">⚙️ Problemas de software</h3>
+              <p class="card-text">Programas que no abren, Windows con errores, Office sin activar, drivers faltantes o impresora que no funciona. Te lo solucionamos.</p>
+              <a href="https://wa.me/51993976840?text=Hola,%20tengo%20problemas%20con%20el%20software%20de%20mi%20laptop" class="btn-green" target="_blank" rel="noopener">Contáctame por WhatsApp</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios">
+      <div class="section-inner">
+        <div class="section-head fade-in">
+          <span class="badge badge-dark">TARIFARIO</span>
+          <h2 class="section-title">Servicios con precio claro</h2>
+        </div>
+
+        <div class="servicios-layout fade-in">
+          <div class="servicios-img-wrap">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80" alt="Daniel — técnico a domicilio en Lima Norte" loading="lazy" />
+            <div class="servicios-img-caption">Daniel — técnico a domicilio en Lima Norte</div>
+          </div>
+
+          <div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Servicio</th>
+                    <th>Incluye</th>
+                    <th>Precio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="td-service" data-label="Servicio">
+                      Optimización del sistema<br>
+                      <span class="badge-popular">⭐ Más solicitado</span>
+                    </td>
+                    <td data-label="Incluye">Diagnóstico, limpieza de archivos, optimización de inicio, mejora de rendimiento</td>
+                    <td class="td-price" data-label="Precio">S/ 90</td>
+                  </tr>
+                  <tr>
+                    <td class="td-service" data-label="Servicio">Eliminación de virus y protección</td>
+                    <td data-label="Incluye">Escaneo completo, remoción de malware, antivirus configurado<br><span class="badge-bono">🎁 BONO: Nitro PDF Pro — licencia permanente</span></td>
+                    <td class="td-price" data-label="Precio">S/ 120</td>
+                  </tr>
+                  <tr>
+                    <td class="td-service" data-label="Servicio">Formateo básico</td>
+                    <td data-label="Incluye">Backup de archivos, Windows limpio, drivers, configuración inicial<br><span class="badge-bono">🎁 BONO: Nitro PDF Pro — licencia permanente</span></td>
+                    <td class="td-price" data-label="Precio">S/ 130</td>
+                  </tr>
+                  <tr>
+                    <td class="td-service" data-label="Servicio">
+                      Formateo completo + programas<br>
+                      <span class="badge-top">🏆 Más completo</span>
+                    </td>
+                    <td data-label="Incluye">Backup, Windows + Office + antivirus + optimización<br><span class="badge-bono">🎁 BONO: Nitro PDF Pro — licencia permanente</span></td>
+                    <td class="td-price" data-label="Precio">S/ 180</td>
+                  </tr>
+                  <tr>
+                    <td class="td-service" data-label="Servicio">Instalación de programas</td>
+                    <td data-label="Incluye">Instalación y configuración de software según necesidad</td>
+                    <td class="td-price" data-label="Precio">S/ 80 – 90</td>
+                  </tr>
+                  <tr>
+                    <td class="td-service" data-label="Servicio">Mejora de velocidad con SSD</td>
+                    <td data-label="Incluye">Instalación SSD, Windows, optimización completa<br><span class="badge-bono">🎁 BONO: Nitro PDF Pro — licencia permanente</span></td>
+                    <td class="td-price" data-label="Precio">S/ 180 – 220</td>
+                  </tr>
+                  <tr>
+                    <td class="td-service" data-label="Servicio">Diagnóstico técnico</td>
+                    <td data-label="Incluye">Evaluación completa del equipo. <strong>Se descuenta del precio final si realizas el servicio.</strong></td>
+                    <td class="td-price" data-label="Precio">S/ 30</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <a href="https://wa.me/51993976840?text=Hola,%20necesito%20soporte%20técnico%20para%20mi%20laptop" class="btn-green-full" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.858L.054 23.486a.5.5 0 0 0 .612.612l5.628-1.48A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 0 1-5.032-1.384l-.36-.214-3.733.981.999-3.648-.235-.374A9.806 9.806 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+              Consultar por WhatsApp ahora
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VENTAJAS -->
+    <section id="ventajas">
+      <div class="section-inner">
+        <div class="section-head fade-in">
+          <span class="badge badge-dark">VENTAJAS</span>
+          <h2 class="section-title">¿Por qué elegir Soporte IT Peru?</h2>
+        </div>
+        <div class="cards-grid">
+
+          <article class="card fade-in">
+            <img class="card-img" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&q=75" alt="Técnico de computadoras a domicilio en Lima Norte" loading="lazy" />
+            <div class="card-body">
+              <div class="card-icon">🏠</div>
+              <h3 class="card-title card-title-orange">100% a domicilio</h3>
+              <p class="card-text">No pierdas tiempo trasladando tu equipo. Ofrecemos reparación de laptops en Lima Norte yendo directamente a tu casa en Los Olivos, SMP, Independencia o Comas.</p>
+            </div>
+          </article>
+
+          <article class="card fade-in">
+            <img class="card-img" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&q=75" alt="Reparación de laptops el mismo día en Lima Norte" loading="lazy" />
+            <div class="card-body">
+              <div class="card-icon">⚡</div>
+              <h3 class="card-title card-title-orange">Solución el mismo día</h3>
+              <p class="card-text">En la mayoría de casos resolvemos el problema en una sola visita. Sin demoras innecesarias ni citas que se postergan.</p>
+            </div>
+          </article>
+
+          <article class="card fade-in">
+            <img class="card-img" src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&q=75" alt="Soporte técnico con precio fijo garantizado en Lima Norte" loading="lazy" />
+            <div class="card-body">
+              <div class="card-icon">✅</div>
+              <h3 class="card-title card-title-orange">Precio fijo garantizado</h3>
+              <p class="card-text">El precio que ves es el que pagas. Sin cobros sorpresa al final. Te decimos el costo antes de comenzar cualquier trabajo.</p>
+            </div>
+          </article>
+
+          <article class="card fade-in">
+            <img class="card-img" src="https://images.unsplash.com/photo-1587560699334-cc4ff634909a?w=400&q=75" alt="Soporte técnico remoto para computadoras Lima Norte" loading="lazy" />
+            <div class="card-body">
+              <div class="card-icon">💻</div>
+              <h3 class="card-title card-title-orange">Soporte remoto</h3>
+              <p class="card-text">¿No puedes recibirnos hoy? También trabajamos en modalidad remota para problemas de software que no requieren presencia física.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section id="testimonios">
+      <div class="section-inner">
+        <div class="section-head fade-in">
+          <span class="badge badge-dark">CLIENTES SATISFECHOS</span>
+          <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+        </div>
+
+        <div class="counter-block fade-in">
+          <div class="counter-num">50+</div>
+          <p class="counter-label">equipos reparados en Lima Norte</p>
+        </div>
+
+        <div class="testimonios-grid">
+
+          <div class="testi-card fade-in">
+            <div class="stars">★★★★★</div>
+            <p class="testi-text">"Mi laptop tardaba 10 minutos en encender, ahora va perfecta. Vinieron a mi casa en Los Olivos el mismo día. Muy profesionales y precio justo."</p>
+            <div class="testi-author">
+              <div class="avatar">CM</div>
+              <div>
+                <div class="author-name">Carlos M.</div>
+                <div class="author-zone">Los Olivos</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card fade-in">
+            <div class="stars">★★★★★</div>
+            <p class="testi-text">"Tenía virus por todos lados y perdía archivos. Lo solucionaron en 2 horas y me dejaron el antivirus instalado. Súper recomendados."</p>
+            <div class="testi-author">
+              <div class="avatar">RT</div>
+              <div>
+                <div class="author-name">Rosa T.</div>
+                <div class="author-zone">San Martín de Porres</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card fade-in">
+            <div class="stars">★★★★★</div>
+            <p class="testi-text">"Formateo completo en 3 horas, me dejaron el Office y todo instalado. Sin sorpresas en el precio. Lo recomiendo."</p>
+            <div class="testi-author">
+              <div class="avatar">MA</div>
+              <div>
+                <div class="author-name">Miguel A.</div>
+                <div class="author-zone">Independencia</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section id="cta">
+      <div class="section-inner">
+        <div class="fade-in" style="text-align:center; max-width:640px; margin:0 auto;">
+          <span class="badge badge-orange">CONTÁCTANOS</span>
+          <h2 class="cta-title">¿Listo para solucionar el problema de tu equipo?</h2>
+          <p class="cta-sub">Escríbenos ahora. Atención de lunes a sábado.</p>
+          <a href="https://wa.me/51993976840?text=Hola,%20necesito%20soporte%20técnico%20para%20mi%20laptop" class="btn-hero" target="_blank" rel="noopener">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.858L.054 23.486a.5.5 0 0 0 .612.612l5.628-1.48A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 0 1-5.032-1.384l-.36-.214-3.733.981.999-3.648-.235-.374A9.806 9.806 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+            Escribir por WhatsApp
+          </a>
+          <p class="cta-extra">Sin compromiso. Solo cuéntanos qué le pasa a tu equipo.</p>
+          <p class="cta-note">🕐 Lunes a sábado · Daniel — Técnico a domicilio</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ZONAS SEO LOCAL -->
+    <section id="zonas-cobertura">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2 class="section-title">Zonas donde brindamos soporte técnico</h2>
+        </div>
+        <p style="text-align:center; color:#475569; max-width:620px; margin:0 auto; line-height:1.75; font-size:1rem;">
+          Atendemos en Lima Norte: Los Olivos, San Martín de Porres, Independencia y Comas. Servicio técnico a domicilio rápido y confiable.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="section-inner">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#hero" class="logo" style="font-size:1.1rem;">SOPORTE <span>IT</span> PERU</a>
+          <p class="footer-desc">Servicio técnico profesional a domicilio en Lima Norte. Reparamos laptops con precio fijo y atención el mismo día.</p>
+          <p class="footer-desc">Brindamos soporte técnico en Lima Norte con atención a domicilio rápida y confiable.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Zonas de atención</h4>
+          <ul>
+            <li>📍 Los Olivos</li>
+            <li>📍 San Martín de Porres</li>
+            <li>📍 Independencia</li>
+            <li>📍 Comas</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li>📱 993 976 840</li>
+            <li>🕐 Lunes a sábado</li>
+            <li>🏠 A domicilio</li>
+            <li>💻 Soporte remoto</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copy">
+        Soporte IT Peru © 2025 — Lima Norte
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/51993976840?text=Hola,%20necesito%20soporte%20técnico%20para%20mi%20laptop" class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.858L.054 23.486a.5.5 0 0 0 .612.612l5.628-1.48A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 0 1-5.032-1.384l-.36-.214-3.733.981.999-3.648-.235-.374A9.806 9.806 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+  </a>
+
+  <script>
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
