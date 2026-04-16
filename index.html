@@ -297,17 +297,18 @@
 
     .servicios-layout {
       display: grid;
-      grid-template-columns: 40% 1fr;
-      gap: 2.5rem;
-      align-items: start;
+      grid-template-columns: 44% 1fr;
+      gap: 1.75rem;
+      align-items: stretch;
     }
 
-    .servicios-img-wrap { position: relative; border-radius: 12px; overflow: hidden; }
+    .servicios-img-wrap { position: relative; border-radius: 12px; overflow: hidden; height: 100%; }
     .servicios-img-wrap img {
       width: 100%;
       height: 100%;
       min-height: 280px;
       object-fit: cover;
+      object-position: 70% center;
       display: block;
     }
     .servicios-img-caption {
@@ -324,6 +325,8 @@
     .table-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid var(--card-border); box-shadow: 0 2px 12px rgba(15,23,42,0.07); }
 
     table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    table th:nth-child(1), table td:nth-child(1) { width: 30%; }
+    table th:nth-child(3), table td:nth-child(3) { white-space: nowrap; }
 
     thead th {
       background: var(--dark);
@@ -655,7 +658,8 @@
       img, .card-img { max-width: 100%; }
 
       /* Servicios: 1 columna, imagen más compacta */
-      .servicios-layout { grid-template-columns: 1fr; gap: 1.5rem; }
+      .servicios-layout { grid-template-columns: 1fr; gap: 1.5rem; align-items: start; }
+      .servicios-img-wrap { height: auto; }
       .servicios-img-wrap img { min-height: 180px; max-height: 220px; }
 
       /* ── Tabla → cards individuales por fila ── */
@@ -752,6 +756,85 @@
       .hero-badges { gap: 6px; }
       .counter-num { font-size: 3rem; }
     }
+
+    /* ── BLOQUE DESTACADO ── */
+    .destacado {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      padding: 1.75rem 1.5rem;
+      margin-bottom: 1.75rem;
+      text-align: center;
+    }
+    .destacado-badge {
+      display: inline-block;
+      background: var(--orange);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.82rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 50px;
+      margin-bottom: .9rem;
+    }
+    .destacado-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+    .destacado-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto 1.25rem;
+      display: inline-block;
+      text-align: left;
+    }
+    .destacado-list li {
+      color: #e2e8f0;
+      font-size: 0.93rem;
+      font-weight: 600;
+      padding: 4px 0;
+    }
+    .destacado-precio {
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: var(--gold);
+      margin-bottom: 1.25rem;
+    }
+
+    /* ── SECCIÓN LANDING PAGES ── */
+    #landing-pages {
+      background: var(--dark);
+      border-top: 3px solid var(--orange);
+    }
+    #landing-pages .section-title { color: #fff; }
+    #landing-pages .section-head p {
+      color: var(--text-muted);
+      font-size: 0.97rem;
+      margin-top: .5rem;
+    }
+    .landing-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto 1.5rem;
+      display: inline-block;
+      text-align: left;
+    }
+    .landing-list li {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      padding: 5px 0;
+      font-weight: 500;
+    }
+    .landing-precio {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -773,14 +856,14 @@
       <div class="hero-inner fade-in">
         <span class="badge badge-orange">⚡ LIMA NORTE · SERVICIO A DOMICILIO</span>
         <h1 class="hero-title">Soporte técnico de computadoras en Lima Norte</h1>
-        <p class="hero-emotional">¿Tu laptop se congela justo<br><em>cuando más la necesitas?</em></p>
-        <p class="hero-confirm">✅ La reparamos hoy mismo en tu domicilio.</p>
+        <p class="hero-emotional">¿Tu laptop está lenta, con virus o no inicia?<br><em>La dejamos rápida y limpia en 2-3 horas, hoy mismo</em> en tu casa.</p>
+        <p class="hero-confirm">✅ Precio fijo sin sorpresas · Atención el mismo día · +50 equipos atendidos</p>
         <p class="hero-sub">
           Como técnico de computadoras a domicilio, diagnosticamos y reparamos tu laptop hoy mismo en tu casa. Sin moverte. Sin sorpresas en el precio.
         </p>
         <a href="https://wa.me/51993976840?text=Hola,%20necesito%20soporte%20técnico%20para%20mi%20laptop" class="btn-hero" target="_blank" rel="noopener">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.858L.054 23.486a.5.5 0 0 0 .612.612l5.628-1.48A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 0 1-5.032-1.384l-.36-.214-3.733.981.999-3.648-.235-.374A9.806 9.806 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
-          Hablar por WhatsApp ahora
+          Escríbeme ahora y lo solucionamos hoy
         </a>
         <div class="hero-badges">
           <span class="hero-badge-item">✓ A domicilio</span>
@@ -806,7 +889,7 @@
             <div class="card-body">
               <h3 class="card-title">💻 Laptop muy lenta</h3>
               <p class="card-text">Se demora minutos en encender, los programas tardan en abrir, el sistema se congela. Lo resolvemos con optimización completa.</p>
-              <a href="https://wa.me/51993976840?text=Hola,%20mi%20laptop%20está%20muy%20lenta%20y%20necesito%20que%20la%20revisen" class="btn-green" target="_blank" rel="noopener">Contáctame por WhatsApp</a>
+              <a href="https://wa.me/51993976840?text=Hola,%20mi%20laptop%20está%20muy%20lenta%20y%20necesito%20que%20la%20revisen" class="btn-green" target="_blank" rel="noopener">Atención inmediata por WhatsApp</a>
             </div>
           </article>
 
@@ -815,7 +898,7 @@
             <div class="card-body">
               <h3 class="card-title">🛡️ Virus o malware</h3>
               <p class="card-text">Publicidad que aparece sola, archivos que desaparecen, contraseñas comprometidas. Eliminamos todo el malware y protegemos tu equipo.</p>
-              <a href="https://wa.me/51993976840?text=Hola,%20creo%20que%20mi%20laptop%20tiene%20virus%20y%20necesito%20ayuda" class="btn-green" target="_blank" rel="noopener">Contáctame por WhatsApp</a>
+              <a href="https://wa.me/51993976840?text=Hola,%20creo%20que%20mi%20laptop%20tiene%20virus%20y%20necesito%20ayuda" class="btn-green" target="_blank" rel="noopener">Atención inmediata por WhatsApp</a>
             </div>
           </article>
 
@@ -824,7 +907,7 @@
             <div class="card-body">
               <h3 class="card-title">🖥️ Pantalla negra o azul</h3>
               <p class="card-text">La laptop no enciende, aparece una pantalla azul de error o se reinicia sola constantemente. Diagnosticamos y reparamos el sistema.</p>
-              <a href="https://wa.me/51993976840?text=Hola,%20mi%20laptop%20muestra%20pantalla%20negra%20o%20azul%20y%20no%20funciona" class="btn-green" target="_blank" rel="noopener">Contáctame por WhatsApp</a>
+              <a href="https://wa.me/51993976840?text=Hola,%20mi%20laptop%20muestra%20pantalla%20negra%20o%20azul%20y%20no%20funciona" class="btn-green" target="_blank" rel="noopener">Atención inmediata por WhatsApp</a>
             </div>
           </article>
 
@@ -833,7 +916,7 @@
             <div class="card-body">
               <h3 class="card-title">⚙️ Problemas de software</h3>
               <p class="card-text">Programas que no abren, Windows con errores, Office sin activar, drivers faltantes o impresora que no funciona. Te lo solucionamos.</p>
-              <a href="https://wa.me/51993976840?text=Hola,%20tengo%20problemas%20con%20el%20software%20de%20mi%20laptop" class="btn-green" target="_blank" rel="noopener">Contáctame por WhatsApp</a>
+              <a href="https://wa.me/51993976840?text=Hola,%20tengo%20problemas%20con%20el%20software%20de%20mi%20laptop" class="btn-green" target="_blank" rel="noopener">Atención inmediata por WhatsApp</a>
             </div>
           </article>
 
@@ -849,9 +932,26 @@
           <h2 class="section-title">Servicios con precio claro</h2>
         </div>
 
+        <!-- BLOQUE DESTACADO -->
+        <div class="destacado fade-in">
+          <div class="destacado-badge">🔥 Servicio más solicitado</div>
+          <h3 class="destacado-title">Formateo completo + Office + Antivirus</h3>
+          <ul class="destacado-list">
+            <li>✔ Laptop rápida y limpia en 2-3 horas</li>
+            <li>✔ Todo instalado y listo para usar</li>
+            <li>✔ Sin virus ni errores</li>
+            <li>✔ Atención el mismo día</li>
+          </ul>
+          <div class="destacado-precio">💰 Precio fijo: S/180</div>
+          <a href="https://wa.me/51993976840?text=Hola,%20quiero%20el%20formateo%20completo%20con%20Office%20y%20Antivirus%20por%20S/180" class="btn-green-full" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.858L.054 23.486a.5.5 0 0 0 .612.612l5.628-1.48A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 0 1-5.032-1.384l-.36-.214-3.733.981.999-3.648-.235-.374A9.806 9.806 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+            Escríbeme ahora y lo solucionamos hoy
+          </a>
+        </div>
+
         <div class="servicios-layout fade-in">
           <div class="servicios-img-wrap">
-            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80" alt="Daniel — técnico a domicilio en Lima Norte" loading="lazy" />
+            <img src="servicios.webp" alt="Persona usando laptop de forma fluida y sin problemas" loading="lazy" />
             <div class="servicios-img-caption">Daniel — técnico a domicilio en Lima Norte</div>
           </div>
 
@@ -912,7 +1012,7 @@
             </div>
             <a href="https://wa.me/51993976840?text=Hola,%20necesito%20soporte%20técnico%20para%20mi%20laptop" class="btn-green-full" target="_blank" rel="noopener">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.858L.054 23.486a.5.5 0 0 0 .612.612l5.628-1.48A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 0 1-5.032-1.384l-.36-.214-3.733.981.999-3.648-.235-.374A9.806 9.806 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
-              Consultar por WhatsApp ahora
+              Escríbeme y lo resolvemos hoy mismo
             </a>
           </div>
         </div>
@@ -1036,6 +1136,29 @@
           </a>
           <p class="cta-extra">Sin compromiso. Solo cuéntanos qué le pasa a tu equipo.</p>
           <p class="cta-note">🕐 Lunes a sábado · Daniel — Técnico a domicilio</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LANDING PAGES -->
+    <section id="landing-pages">
+      <div class="section-inner">
+        <div class="section-head fade-in">
+          <span class="badge badge-orange">NUEVO SERVICIO</span>
+          <h2 class="section-title">💻 También creo páginas web para captar clientes</h2>
+          <p>Ideal para emprendedores que quieren vender en internet.</p>
+        </div>
+        <div class="fade-in" style="text-align:center; max-width:560px; margin:0 auto;">
+          <ul class="landing-list">
+            <li>✔ Para emprendedores y negocios locales</li>
+            <li>✔ Landing page lista en 1-2 días</li>
+            <li>✔ Diseño profesional, mobile-first y funcional</li>
+          </ul>
+          <p class="landing-precio">💰 Desde S/. 350.00</p>
+          <a href="https://wa.me/51993976840?text=Hola,%20quiero%20información%20sobre%20una%20landing%20page" class="btn-green-full" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.858L.054 23.486a.5.5 0 0 0 .612.612l5.628-1.48A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 0 1-5.032-1.384l-.36-.214-3.733.981.999-3.648-.235-.374A9.806 9.806 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+            Solicitar mi landing page por WhatsApp
+          </a>
         </div>
       </div>
     </section>
