@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Soporte IT Peru — Lima Metropolitana</title>
+  <meta name="description" content="Contáctanos por WhatsApp, email o formulario. Soporte IT Peru — Lima Metropolitana. RUC 10097425936. Respuesta en menos de 2 horas hábiles." />
+  <meta property="og:title" content="Contacto — Soporte IT Peru" />
+  <meta property="og:description" content="WhatsApp +51 993 976 840 · info@soporteitperu.com · Atención L–V 8am–7pm · Sábados 9am–1pm" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://soporteitperu.com/contacto.html" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://soporteitperu.com/contacto.html" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* ── Estilos específicos contacto ── */
+    .contacto-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    .contacto-info-card {
+      background: var(--dark);
+      border-radius: 16px;
+      padding: 2rem;
+      color: #fff;
+    }
+    .contacto-info-card h3 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      font-size: 0.82rem;
+    }
+    .contacto-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 1.25rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .contacto-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .contacto-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .contacto-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin-bottom: 3px;
+    }
+    .contacto-value {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .contacto-value:hover { color: var(--orange); }
+    .contacto-sub {
+      font-size: 0.8rem;
+      color: #64748b;
+      margin-top: 2px;
+    }
+
+    /* Formulario de contacto */
+    .contacto-form-wrap {
+      background: #fff;
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(15,23,42,0.07);
+    }
+    .contacto-form-wrap h3 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 1.5rem;
+    }
+
+    .contacto-success {
+      display: none;
+      text-align: center;
+      padding: 2rem 0;
+    }
+    .contacto-success.show { display: block; }
+    .contacto-success-icon { font-size: 3rem; margin-bottom: 1rem; }
+    .contacto-success h4 { font-size: 1.2rem; font-weight: 800; color: var(--dark); margin-bottom: .5rem; }
+    .contacto-success p  { font-size: 0.9rem; color: #475569; line-height: 1.6; }
+
+    @media (max-width: 768px) {
+      .contacto-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="main-header">
+    <a href="index.html" class="logo">SOPORTE <span>IT</span> PERU</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="empresas.html">Empresas</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+
+    <a href="https://wa.me/51993976840?text=Hola,%20necesito%20información%20sobre%20sus%20servicios" class="btn-wa" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.858L.054 23.486a.5.5 0 0 0 .612.612l5.628-1.48A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 0 1-5.032-1.384l-.36-.214-3.733.981.999-3.648-.235-.374A9.806 9.806 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+      <span class="btn-wa-text">WhatsApp</span>
+    </a>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <div class="page-hero">
+      <span class="badge badge-orange">CONTACTO</span>
+      <h1 class="page-hero-title">Hablemos</h1>
+      <p class="page-hero-sub">WhatsApp es la forma más rápida. Respondemos en menos de 10 minutos en horario de atención.</p>
+    </div>
+
+
+    <!-- CONTACTO PRINCIPAL -->
+    <section id="contacto-info">
+      <div class="section-inner">
+        <div class="contacto-grid fade-in">
+
+          <!-- Info -->
+          <div class="contacto-info-card">
+            <h3>Datos de contacto</h3>
+
+            <div class="contacto-item">
+              <div class="contacto-icon">💬</div>
+              <div>
+                <div class="contacto-label">WhatsApp — más rápido</div>
+                <a href="https://wa.me/51993976840?text=Hola,%20necesito%20información%20sobre%20sus%20servicios" class="contacto-value" target="_blank" rel="noopener">+51 993 976 840</a>
+                <div class="contacto-sub">Respuesta en menos de 10 minutos</div>
+              </div>
+            </div>
+
+            <div class="contacto-item">
+              <div class="contacto-icon">📧</div>
+              <div>
+                <div class="contacto-label">Email</div>
+                <a href="mailto:info@soporteitperu.com" class="contacto-value">info@soporteitperu.com</a>
+                <div class="contacto-sub">Respuesta el mismo día hábil</div>
+              </div>
+            </div>
+
+            <div class="contacto-item">
+              <div class="contacto-icon">🕐</div>
+              <div>
+                <div class="contacto-label">Horario de atención</div>
+                <div class="contacto-value" style="cursor:default;">L–V: 8:00am – 7:00pm</div>
+                <div class="contacto-sub">Sábados: 9:00am – 1:00pm</div>
+              </div>
+            </div>
+
+            <div class="contacto-item">
+              <div class="contacto-icon">📍</div>
+              <div>
+                <div class="contacto-label">Cobertura</div>
+                <div class="contacto-value" style="cursor:default;">14 distritos de Lima</div>
+                <div class="contacto-sub">Los Olivos, SMP, Miraflores, San Isidro y más</div>
+              </div>
+            </div>
+
+            <div class="contacto-item">
+              <div class="contacto-icon">🧾</div>
+              <div>
+                <div class="contacto-label">Razón social / RUC</div>
+                <div class="contacto-value" style="cursor:default; font-size:0.88rem;">MEDINA PACHAS DANIEL ALEJANDRO</div>
+                <div class="contacto-sub">RUC: 10097425936</div>
+              </div>
+            </div>
+
+            <div class="contacto-item">
+              <div class="contacto-icon">🌐</div>
+              <div>
+                <div class="contacto-label">Web</div>
+                <a href="https://soporteitperu.com" class="contacto-value">soporteitperu.com</a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Formulario -->
+          <div class="contacto-form-wrap">
+            <h3>Escríbenos por aquí</h3>
+
+            <form id="contactoForm" novalidate>
+              <div class="form-group">
+                <label for="c_nombre">Nombre completo *</label>
+                <input type="text" id="c_nombre" name="nombre" placeholder="Tu nombre" required autocomplete="name" />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="c_whatsapp">WhatsApp *</label>
+                  <input type="tel" id="c_whatsapp" name="whatsapp" placeholder="999 000 111" required autocomplete="tel" />
+                </div>
+                <div class="form-group">
+                  <label for="c_email">Email</label>
+                  <input type="email" id="c_email" name="email" placeholder="opcional" autocomplete="email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="c_tipo">¿Qué necesitas?</label>
+                <select id="c_tipo" name="tipo">
+                  <option value="" disabled selected>Selecciona</option>
+                  <option>Soporte para mi empresa (plan mensual)</option>
+                  <option>Reparación o servicio a domicilio</option>
+                  <option>Información de precios</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="c_mensaje">Mensaje *</label>
+                <textarea id="c_mensaje" name="mensaje" placeholder="Cuéntanos qué necesitas o qué problema tiene tu equipo..." required rows="4" style="width:100%; padding:11px 14px; border:1.5px solid #e2e8f0; border-radius:8px; font-size:0.9rem; font-family:Inter,sans-serif; color:#0f172a; resize:vertical; outline:none; transition:border-color .2s, box-shadow .2s;"></textarea>
+              </div>
+              <button type="submit" class="form-submit" id="btnContacto">
+                Enviar mensaje
+              </button>
+              <p class="form-privacy">No compartimos tus datos con terceros.</p>
+            </form>
+
+            <div class="contacto-success" id="contactoSuccess">
+              <div class="contacto-success-icon">✅</div>
+              <h4>Mensaje recibido</h4>
+              <p>Te responderemos por WhatsApp en menos de 2 horas hábiles.<br><br>
+              Si necesitas respuesta inmediata, escríbenos directamente al <a href="https://wa.me/51993976840" target="_blank" rel="noopener" style="color:var(--orange); font-weight:700;">+51 993 976 840</a>.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- COBERTURA -->
+    <section id="cobertura" style="background:var(--bg1);">
+      <div class="section-inner">
+        <div class="section-head fade-in">
+          <span class="badge badge-dark">COBERTURA</span>
+          <h2 class="section-title">14 distritos — sin costo extra de traslado</h2>
+        </div>
+
+        <div class="fade-in" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:.75rem; max-width:800px; margin:0 auto 1.5rem;">
+          <div style="background:#fff; border:1px solid var(--card-border); border-radius:10px; padding:.75rem 1rem; text-align:center; font-size:0.88rem; font-weight:600; color:var(--dark);">📍 Los Olivos</div>
+          <div style="background:#fff; border:1px solid var(--card-border); border-radius:10px; padding:.75rem 1rem; text-align:center; font-size:0.88rem; font-weight:600; color:var(--dark);">📍 San Martín de Porres</div>
+          <div style="background:#fff; border:1px solid var(--card-border); border-radius:10px; padding:.75rem 1rem; text-align:center; font-size:0.88rem; font-weight:600; color:var(--dark);">📍 Independencia</div>
+          <div style="background:#fff; border:1px solid var(--card-border); border-radius:10px; padding:.75rem 1rem; text-align:center; font-size:0.88rem; font-weight:600; color:var(--dark);">📍 Comas</div>
+          <div style="background:#fff; border:1px solid var(--card-border); border-radius:10px; padding:.75rem 1rem; text-align:center; font-size:0.88rem; font-weight:600; color:var(--dark);">📍 San Miguel</div>
+          <div style="background:#fff; border:1px solid var(--card-border); border-radius:10px; padding:.75rem 1rem; text-align:center; font-size:0.88rem; font-weight:600; color:var(--dark);">📍 Pueblo Libre</div>
+          <div style="background:#fff; border:1px solid var(--card-border); border-radius:10px; padding:.75rem 1rem; text-align:center; font-size:0.88rem; font-weight:600; color:var(--dark);">📍 Jesús María</div>
+          <div style="background:#fff; border:1px solid var(--card-border); border-radius:10px; padding:.75rem 1rem; text-align:center; font-size:0.88rem; font-weight:600; color:var(--dark);">📍 Magdalena</div>
+          <div style="background:#fff; border:1px solid var(--card-border); border-radius:10px; padding:.75rem 1rem; text-align:center; font-size:0.88rem; font-weight:600; color:var(--dark);">📍 San Borja</div>
+          <div style="background:#fff; border:1px solid var(--card-border); border-radius:10px; padding:.75rem 1rem; text-align:center; font-size:0.88rem; font-weight:600; color:var(--dark);">📍 Miraflores</div>
+          <div style="background:#fff; border:1px solid var(--card-border); border-radius:10px; padding:.75rem 1rem; text-align:center; font-size:0.88rem; font-weight:600; color:var(--dark);">📍 San Isidro</div>
+          <div style="background:#fff; border:1px solid var(--card-border); border-radius:10px; padding:.75rem 1rem; text-align:center; font-size:0.88rem; font-weight:600; color:var(--dark);">📍 San Luis</div>
+          <div style="background:#fff; border:1px solid var(--card-border); border-radius:10px; padding:.75rem 1rem; text-align:center; font-size:0.88rem; font-weight:600; color:var(--dark);">📍 Cercado de Lima</div>
+          <div style="background:#fff; border:1px solid var(--card-border); border-radius:10px; padding:.75rem 1rem; text-align:center; font-size:0.88rem; font-weight:600; color:var(--dark);">📍 La Victoria</div>
+        </div>
+
+        <p style="text-align:center; font-size:0.85rem; color:#64748b; margin-top:.5rem;">
+          ¿Tu distrito no aparece? Consúltanos — podemos evaluar cobertura con cargo adicional.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="section-inner">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="font-size:1.1rem;">SOPORTE <span>IT</span> PERU</a>
+          <p class="footer-desc">Soporte técnico profesional en Lima Metropolitana. Empresas y domicilios. Factura válida para SUNAT.</p>
+          <p class="footer-desc" style="margin-top:.5rem; font-size:0.82rem;">RUC: 10097425936<br>MEDINA PACHAS DANIEL ALEJANDRO</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="empresas.html">Planes para empresas</a></li>
+            <li><a href="servicios.html">Servicios a domicilio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto directo</h4>
+          <ul>
+            <li>📱 <a href="https://wa.me/51993976840" target="_blank" rel="noopener">+51 993 976 840</a></li>
+            <li>📧 <a href="mailto:info@soporteitperu.com">info@soporteitperu.com</a></li>
+            <li>🕐 L–V 8am–7pm · S 9am–1pm</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Cobertura</h4>
+          <ul>
+            <li>14 distritos de Lima</li>
+            <li>Movilidad propia</li>
+            <li>Sin costo de traslado</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copy">
+        Soporte IT Peru © 2026 — Lima Metropolitana &nbsp;·&nbsp; RUC 10097425936
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/51993976840?text=Hola,%20necesito%20información%20sobre%20sus%20servicios" class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.858L.054 23.486a.5.5 0 0 0 .612.612l5.628-1.48A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 0 1-5.032-1.384l-.36-.214-3.733.981.999-3.648-.235-.374A9.806 9.806 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+  </a>
+
+
+  <script>
+    // ── Fade-in ──
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // ── Nav toggle ──
+    const navToggle = document.getElementById('navToggle');
+    const mainHeader = document.getElementById('main-header');
+    navToggle.addEventListener('click', () => {
+      const isOpen = mainHeader.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        mainHeader.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // ── Textarea focus style ──
+    const textarea = document.getElementById('c_mensaje');
+    if (textarea) {
+      textarea.addEventListener('focus', () => {
+        textarea.style.borderColor = 'var(--orange)';
+        textarea.style.boxShadow = '0 0 0 3px rgba(249,115,22,0.12)';
+      });
+      textarea.addEventListener('blur', () => {
+        textarea.style.borderColor = '#e2e8f0';
+        textarea.style.boxShadow = 'none';
+      });
+    }
+
+    // ── Formulario contacto ──
+    document.getElementById('contactoForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const btn = document.getElementById('btnContacto');
+      btn.disabled = true;
+      btn.textContent = 'Enviando...';
+
+      const data = {
+        nombre:   document.getElementById('c_nombre').value.trim(),
+        whatsapp: document.getElementById('c_whatsapp').value.trim(),
+        email:    document.getElementById('c_email').value.trim(),
+        tipo:     document.getElementById('c_tipo').value,
+        mensaje:  document.getElementById('c_mensaje').value.trim(),
+        fecha:    new Date().toISOString(),
+        fuente:   'soporteitperu.com/contacto.html'
+      };
+
+      // ⚠️ REEMPLAZAR con URL del webhook n8n cuando esté configurado
+      const WEBHOOK_URL = 'https://TU_N8N_URL/webhook/contacto';
+
+      try {
+        await fetch(WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+      } catch (err) {
+        console.warn('Webhook error:', err);
+      }
+
+      this.style.display = 'none';
+      document.getElementById('contactoSuccess').classList.add('show');
+    });
+  </script>
+
+</body>
+</html>
